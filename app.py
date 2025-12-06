@@ -23,7 +23,7 @@ def generate_text(seed_text, num_words=10):
         text += " " + next_word
     return text
 
-st.title("Next-Word Prediction Demo")
+st.title("Next-Word Prediction with Deep Learning")
 seed = st.text_input("Enter a starting text:", "hello")
 
 num_words = st.slider("Number of words to generate", 1, 20, 10)
@@ -31,4 +31,5 @@ num_words = st.slider("Number of words to generate", 1, 20, 10)
 if st.button("Generate"):
     result = generate_text(seed, num_words)
     st.write(result)
+
 
