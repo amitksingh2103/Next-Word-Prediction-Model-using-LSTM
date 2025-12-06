@@ -10,7 +10,7 @@ with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
 reverse_index = {idx: word for word, idx in tokenizer.word_index.items()}
-max_len =  X.shape[1]  
+max_len =  43  
 
 def generate_text(seed_text, num_words=10):
     text = seed_text
@@ -31,3 +31,4 @@ num_words = st.slider("Number of words to generate", 1, 20, 10)
 if st.button("Generate"):
     result = generate_text(seed, num_words)
     st.write(result)
+
