@@ -1,0 +1,6 @@
+venv/
+News_Category_Dataset_v3.json
+next_word_predict.zip
+*.zip
+__pycache__/
+.ipynb_checkpoints/
